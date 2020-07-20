@@ -12,5 +12,7 @@ resource "aws_db_instance" "rds" {
   name                 = var.name_prefix
   username             = "postgres"
   password             = random_string.password.result # Will be changed manually
+  kms_key_id = aws_kms_key.rds.key_id
+  storage_encrypted = true
   tags = var.tags
 }
