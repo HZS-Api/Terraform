@@ -1,15 +1,15 @@
 variable "name_prefix" {
-    type = string
+  type = string
 }
 
 variable "instance_class" {
-    type = string
+  type = string
 }
 
 variable "allocated_storage" {
-    type = number
+  type = number
 }
 
 variable "tags" {
-    type = map
+  type = map
 }

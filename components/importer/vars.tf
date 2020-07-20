@@ -1,7 +1,7 @@
 variable "name_prefix" {
-    type = string
+  type = string
 }
 
 variable "tags" {
-    type = map
+  type = map
 }

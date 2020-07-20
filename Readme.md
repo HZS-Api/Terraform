@@ -1,5 +1,7 @@
 # HZS Api - Terraform
 
+![Pipeline](https://github.com/HZS-Api/Terraform/workflows/Pipeline/badge.svg)
+
 Infratructure for HZS Api Project
 
 ## AWS access
