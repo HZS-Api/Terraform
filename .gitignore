@@ -1,0 +1,6 @@
+# IDEs
+.vscode
+
+# Terraform
+.terraform
+.terraform.tfstate.lock.info
