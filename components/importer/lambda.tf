@@ -5,7 +5,7 @@ resource "aws_lambda_function" "importer" {
   role             = aws_iam_role.importer.arn
   handler          = "src/import.lambda_handler"
   source_code_hash = filebase64sha256("resources/hello-world.zip")
-  layers = [aws_lambda_layer_version.dependencies.arn]
+  layers           = [aws_lambda_layer_version.dependencies.arn]
 
   runtime = "python3.8"
 

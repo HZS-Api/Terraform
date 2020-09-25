@@ -1,6 +1,6 @@
 # HZS Api - Terraform
 
-![Pipeline](https://github.com/HZS-Api/Terraform/workflows/Pipeline/badge.svg)
+[![Pipeline](https://github.com/HZS-Api/Terraform/workflows/Pipeline/badge.svg)](https://github.com/HZS-Api/Terraform/actions)
 
 Infratructure for HZS Api Project
 
