@@ -3,7 +3,7 @@ terraform {
 
   backend "s3" {
     bucket = "jz-terraform-backend"
-    key    = "hzs-api/rds.tfstate"
+    key    = "hzs-api/dynamo_db.tfstate"
     region = "eu-west-1"
   }
 }

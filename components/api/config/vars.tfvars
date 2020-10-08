@@ -1,7 +1,7 @@
-name_prefix = "hzs-importer"
+name_prefix = "hzs-api"
 
 tags = {
   Project       = "hzs-api"
-  Component     = "importer"
+  Component     = "api"
   "Managerd by" = "terraform"
 }
