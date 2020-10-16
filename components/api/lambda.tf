@@ -3,7 +3,7 @@ resource "aws_lambda_function" "api" {
   filename         = "../../resources/hello-world.zip"
   function_name    = var.name_prefix
   role             = aws_iam_role.api.arn
-  handler          = "src/app.main"
+  handler          = "start_lambda.http_server"
   source_code_hash = filebase64sha256("../../resources/hello-world.zip")
   layers           = [aws_lambda_layer_version.dependencies.arn]
 
