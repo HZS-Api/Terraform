@@ -5,3 +5,7 @@ variable "name_prefix" {
 variable "tags" {
   type = map
 }
+
+variable "dynamodb_table_name" {
+  type = string
+}

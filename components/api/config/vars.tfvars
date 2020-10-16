@@ -5,3 +5,5 @@ tags = {
   Component     = "api"
   "Managerd by" = "terraform"
 }
+
+dynamodb_table_name = "hzs"

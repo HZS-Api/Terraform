@@ -9,6 +9,13 @@ resource "aws_lambda_function" "api" {
 
   runtime = "python3.8"
 
+  environment {
+    variables = {
+      TABLE_NAME = data.aws_dynamodb_table.hzs.name
+      DYNAMODB_URL = ""
+    }
+  }
+
   tags = var.tags
 }
 
