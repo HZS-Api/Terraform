@@ -12,7 +12,7 @@ resource "aws_lambda_function" "api" {
 
   environment {
     variables = {
-      TABLE_NAME = data.aws_dynamodb_table.hzs.name
+      TABLE_NAME   = data.aws_dynamodb_table.hzs.name
       DYNAMODB_URL = ""
     }
   }
