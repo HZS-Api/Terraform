@@ -6,6 +6,7 @@ resource "aws_lambda_function" "api" {
   handler          = "start_lambda.http_server"
   source_code_hash = filebase64sha256("../../resources/hello-world.zip")
   layers           = [aws_lambda_layer_version.dependencies.arn]
+  timeout          = 3
 
   runtime = "python3.8"
 
@@ -17,6 +18,15 @@ resource "aws_lambda_function" "api" {
   }
 
   tags = var.tags
+
+  lifecycle {
+    ignore_changes = [
+      filename,
+      source_code_hash,
+      layers,
+      last_modified
+    ]
+  }
 }
 
 resource "aws_lambda_layer_version" "dependencies" {

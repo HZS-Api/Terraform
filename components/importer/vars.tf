@@ -5,3 +5,7 @@ variable "name_prefix" {
 variable "tags" {
   type = map
 }
+
+variable "api_url" {
+  type = string
+}
